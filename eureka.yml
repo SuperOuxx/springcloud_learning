@@ -16,7 +16,7 @@ server:
   port: 8761
   
 env:
-  test
+  dev
   
 lable:
   release
