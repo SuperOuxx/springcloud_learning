@@ -18,7 +18,7 @@ server:
   port: 9101
   
 env:
-  test
+  test2
   
 lable:
   release
