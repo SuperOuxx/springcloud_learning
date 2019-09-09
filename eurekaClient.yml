@@ -10,7 +10,7 @@ eureka:
     enable-self-preservation: false
 
 server:
-  port: 8750
+  port: 9100
   
 env:
   dev
