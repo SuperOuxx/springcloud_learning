@@ -5,9 +5,14 @@ spring:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/,http://localhost:8763/eureka/
+      defaultZone: http://localhost:8761/eureka/
   server:
     enable-self-preservation: false
+  instance:
+      # 心跳间隔时间
+      lease-renewal-interval-in-seconds: 2
+      # 最后一次心跳时间后leaseExpirationDurationInSeconds秒就认为是下线了
+      lease-expiration-duration-in-seconds: 6
 
 server:
   port: 9101
